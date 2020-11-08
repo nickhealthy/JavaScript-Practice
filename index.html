@@ -16,15 +16,31 @@
     <title></title>
 </head>
 <body>
-    <input id='night-day' type="button" value="night" onclick="
-    if (document.querySelector('#night-day').value === 'night') {
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        document.querySelector('#night-day').value = 'day';
-    } else {
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        document.querySelector('#night-day').value = 'night'
+    <input  type="button" value="night" onclick="
+        var target = document.querySelector('body');
+            if (this.value === 'night') { 
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                this.value = 'day';
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length) {
+                console.log(alist[i]);    
+                alist[i].style.color = 'powderblue';
+                i += 1;
+}
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                this.value = 'night'
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while(i < alist.length) {
+                console.log(alist[i]);    
+                alist[i].style.color = 'blue';
+                i += 1;
+
+}
     }
     ">
     <ol>
