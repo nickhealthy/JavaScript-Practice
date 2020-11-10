@@ -1,0 +1,24 @@
+{
+  "name": "Practice-JavaScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "colors.js",
+  "scripts": {
+    "start": "ws",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickhealthy/JavaScript-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickhealthy/JavaScript-Practice/issues"
+  },
+  "homepage": "https://github.com/nickhealthy/JavaScript-Practice#readme",
+  "dependencies": {
+    "local-web-server": "^4.2.1"
+  }
+}
